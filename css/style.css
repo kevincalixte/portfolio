@@ -61,4 +61,237 @@ html {
 
 body {
     font-family: "Lato",sans-serif;
+    color: grey;
+    font-size: 18px;
+}
+
+header  {  
+    position: relative;
+}
+
+header img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: 20%;
+}
+
+header nav {
+    display: flex;
+    width: 90%;
+    position: absolute;
+    top:0px;
+    gap: 25px;
+    margin: 10px 0px 0px 20px;
+}
+
+header .search {
+    width: 10%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    text-align: right;
+    margin: 10px 20px
+}
+
+header nav, header .search {
+    font-size: 17px;
+}
+
+header p {
+    position : absolute;
+    top: 50%;
+    right: 50%;
+    color: white;
+    background-color: rgb(0, 0, 0, 0.8);
+    padding: 10px 30px;
+    transform: translate(50%, -50%);
+    font-size: 30px;
+    letter-spacing: 10px;
+}
+
+.title {
+    text-align: center; 
+    font-size: 30px;
+    margin: 70px 0px 20px;
+}
+
+.italic {
+    text-align: center; 
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+main .about .text {
+    width: 60%;     
+    align-self: center;
+}
+
+main .about {
+ 
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   margin-bottom: 70px
+}
+
+main .presentation {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+main .presentation .left, main .presentation .right     {
+    width: 28%;
+}
+
+main .presentation .left p {
+    margin-bottom: 50px;
+    text-align: center;
+    font-weight: bold;
+}
+
+main .skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+main .skills .skillTitle{
+   margin:40px;
+}
+
+main .skills .skill p {
+    letter-spacing: 5px; 
+}
+
+main .skill progress {
+    width: 55em;
+}
+
+/* PROGRESS VALUE + COLOR 
+Je ne sais pas comment changer les couleurs*/
+
+main .stats {
+    display: flex;;
+    justify-content: center;
+    background-color: rgb(87, 84, 84);
+    color: white;
+    padding: 30px;
+    ;
+}
+
+main .stats .stat {
+    width: 24%;
+    text-align: center;
+}
+
+main .stats .stat > p:first-of-type {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+main .portfolio {
+    position: relative;
+}
+main .portfolio img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: 20%;
+    opacity: 80%;
+}
+
+main .portfolio p{
+    color: white;;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    letter-spacing: 10px;
+    font-size: 40px;
+}
+
+
+/* Je pense qu'ici il y a un probleme dans l'html ligne 115
+je cible la a egalement donc les images ne 
+peuvent pas s'afficher correctement ?, manque de temps*/
+
+main .work .images {
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+    border: 2px solid red;
+    /* margin-top: 40px; */
+   
+}
+
+main .work .images img {
+    width: 60%;
+    margin-bottom: 20px; 
+    border: 2px solid blue ;
+}
+
+main .contactImg {
+    position: relative;
+}
+main .contactImg img{
+    width: 100%;
+    height:500px;
+    object-fit: cover;
+    object-position: 20%;
+    opacity: 80%;   
+}
+
+main .contactImg p {
+    color: white;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    letter-spacing: 10px;
+    font-size: 40px;
+}
+
+/* Manque de temps */
+
+main .contact   {
+  
+    
+}
+   
+main .contact section {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid red; 
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+footer {
+    background-color: rgb(87, 84, 84);
+    padding: 80px;
+    text-align: center;
+}
+
+footer .toTop {
+background-color: white;
+padding: 10px;
+margin-bottom: 20px;
+}
+
+footer .socials {
+    color: white;
+    opacity: 80%;
+    margin: 30px;
+}
+
+footer p {
+    color: white;
+    opacity: 80%;
+}
+
+footer p span {
+    text-decoration: underline;
 }

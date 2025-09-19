@@ -13,7 +13,7 @@
 
 <body>
 
-    <header>
+    <header id="top">
 
         <img src="img/parallax1.jpg" alt="personne de dos">
 
@@ -24,7 +24,7 @@
             <li><a href="#contact"><i class="fa-solid fa-envelope"></i> CONTACT</a></li>
         </nav>
 
-        <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+        <a href="" class="search"><i class="fa-solid fa-magnifying-glass"></i></a>
 
         <p>MY WEBSITE LOGO</p>
         
@@ -36,7 +36,7 @@
 
             <p class="title">ABOUT ME</p>
             <p class="italic">I love photograpy</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum perspiciatis repudiandae sint mollitia id inventore, labore eius ex sunt placeat, provident aperiam! Commodi, sint corrupti voluptatem laboriosam sit rerum debitis blanditiis quas, doloribus necessitatibus asperiores. Eveniet nam omnis culpa maiores, non in dicta! Consequatur illum soluta tenetur itaque nam aliquam quibusdam architecto aperiam incidunt porro accusamus impedit, ratione, eaque perferendis! Assumenda, adipisci quisquam cupiditate magnam ullam maiores nostrum maxime dolores. Deleniti voluptas, quidem eius omnis quae maxime optio consectetur maiores odit ut iste corporis fuga hic consequuntur impedit ducimus magnam libero esse temporibus perspiciatis nulla. Incidunt adipisci aliquid repudiandae iusto!</p>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum perspiciatis repudiandae sint mollitia id inventore, labore eius ex sunt placeat, provident aperiam! Commodi, sint corrupti voluptatem laboriosam sit rerum debitis blanditiis quas, doloribus necessitatibus asperiores. Eveniet nam omnis culpa maiores, non in dicta! Consequatur illum soluta tenetur itaque nam aliquam quibusdam architecto aperiam incidunt porro accusamus impedit, ratione, eaque perferendis! Assumenda, adipisci quisquam cupiditate magnam ullam maiores nostrum maxime dolores. Deleniti voluptas, quidem eius omnis quae maxime optio consectetur maiores odit ut iste corporis fuga hic consequuntur impedit ducimus magnam libero esse temporibus perspiciatis nulla. Incidunt adipisci aliquid repudiandae iusto!</p>
        
         </div>
 
@@ -51,7 +51,7 @@
             </section>
 
             <section class="right">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate minima nobis aliquam, temporibus libero magni provident sapiente modi accusamus! Sunt, quis eaque et repellat nostrum labore odio ipsa beatae numquam dolore nesciunt vero natus suscipit aliquid fugit veritatis nemo esse quos nihil impedit, eius distinctio perferendis, saepe ea. Id magni voluptate amet odit est numquam error quos vero doloremque mollitia. Vitae, sed est blanditiis ut nobis mollitia facere beatae itaque eum dolor inventore quaerat quam enim. Esse exercitationem voluptate aliquid laboriosam tempore quisquam libero ipsum accusamus laborum. Minima beatae ratione nulla esse, ex distinctio enim rerum animi aliquid fugit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.  nostrum labore odio ipsa beatae numquam scipit aliquid nemo esse quos nihil impedit, eius distinctio perferendis, saepe ea. Id magni voluptate amet odit est numquam error quos vero doloremque mollitia. Vitae, sed est blanditiis ut nobis mollitia facere beatae itaque eum dolor inventore quaerat quam enim. Esse exercitationem voluptate aliquid laboriosam tempore quisquam libero ipsum accusamus laborum. Minima beatae ratione nulla esse, ex distinctio enim rerum animi aliquid fugit.</p>
             </section>
    
         </div>
@@ -61,7 +61,7 @@
             <p class="skillTitle">Im really good at:</p>
 
             <div class="skill">
-                <p class="name"><i class="fa-solid fa-camera"></i> Photography</p>
+                <p class="name"><i class="fa-solid fa-camera"></i>Photography</p>
                 <progress value="90" max="100">90%</progress>
             </div>
 
@@ -98,12 +98,14 @@
                 <p>150+</p>
                 <p>Meetings</p>
             </div>
-
-            <img src="/img/parallax2.jpg" alt="ombre cheveux">
-            <p class="portfolio">PORTFOLIO</p>
-            
+   
         </div>
 
+        <div class="portfolio">
+            <img src="/img/parallax2.jpg" alt="ombre cheveux">
+            <p>PORTFOLIO</p>
+        </div>
+      
         <div class="work" id="work">
 
             <p class="title">MY WORK</p>
@@ -125,20 +127,23 @@
 
         </div>
 
-        <div class="contact">
-
+        <div class="contactImg">
             <img src="/img/parallax3.jpg" alt="femme tenant un appareil photo">
+            <p>CONTACT</p>
+        </div>
 
-            <p class="contact">CONTACT</p>
+        <div class="contact" id="contact">
+
+            
 
             <p class="title">WHERE I WORK</p>
             <p class="italic">I'd love your feedback!</p>
 
-            <section>
+            <section class="map">
                 <img src="/img/map.jpg" alt="carte">
             </section>
 
-            <section>
+            <section class="form">
 
                 <p class="location"><i class="fa-solid fa-location-dot"></i> Chicago, US</p>
                 <p class="phone"><i class="fa-solid fa-phone"></i> Phone: +00 151515</p>
@@ -160,7 +165,7 @@
 
     <footer>
 
-        <a class="toTop" href=""><i class="fa-solid fa-arrow-up"></i>To the top</a>
+        <a class="toTop" href="#top"><i class="fa-solid fa-arrow-up"></i>To the top</a>
 
         <div class="socials">
             <a href=""><i class="fa-brands fa-facebook-square"></i></a>
