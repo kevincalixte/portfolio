@@ -1,0 +1,64 @@
+css 
+/* --- Reset / Normalize de base --- */
+
+/* Box sizing global pour tous les éléments */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margins and paddings */
+body, h1, h2, h3, h4, h5, h6,
+p, figure, blockquote, dl, dd,
+ul, ol, li, fieldset, legend {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Listes sans décoration par défaut */
+ul, ol {
+  list-style: none;
+}
+
+/* Liens */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Images, vidéos, SVG, canvas — afficher de façon responsive, bloc, ne pas dépasser */
+img, picture, video, svg, canvas {
+  display: block;
+  max-width: 100%;
+}
+
+/* Inputs / Buttons / selects hériteront de la police de caractère du body */
+input, button, textarea, select {
+  font: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+/* Rendre plus lisible / éviter débordements de texte */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* Corps de page : hauteur minimum + bonne interligne */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Décoration de texte par défaut plus propre */
+html {
+  -webkit-text-size-adjust: 100%; /* éviter redimensionnement texte sur iOS/Safari */
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+/* CSS */
+
+body {
+    font-family: "Lato",sans-serif;
+}
