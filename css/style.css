@@ -172,6 +172,11 @@ main .skill progress {
 
 /* PROGRESS VALUE + COLOR 
 Je ne sais pas comment changer les couleurs*/
+progress {
+    background-color: lightgrey;
+    height: 30px;
+    margin: 10px auto 10px auto;
+}
 
 main .stats {
     display: flex;;
@@ -213,29 +218,38 @@ main .portfolio p{
     font-size: 40px;
 }
 
-
-/* Je pense qu'ici il y a un probleme dans l'html ligne 115
-je cible la a egalement donc les images ne 
-peuvent pas s'afficher correctement ?, manque de temps*/
-
-main .work .images {
+main .images {
     display: flex;
-    /* flex-wrap: wrap; */
-    /* justify-content: center; */
-    border: 2px solid red;
-    /* margin-top: 40px; */
-   
+    flex-flow: wrap;
+    justify-content: space-between;
+    width: 60%;
+    gap: 20px;
+    margin: 30px;
 }
 
-main .work .images img {
-    width: 60%;
-    margin-bottom: 20px; 
-    border: 2px solid blue ;
+main .work .images a {
+    width: 23%;
+}
+
+main .work {
+   display: flex;
+   flex-direction: column;
+    align-items: center;
+}
+
+main .load {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 120px;
+    background-color: rgb(234, 235, 228);
+    padding: 15px;
+    color: black;
 }
 
 main .contactImg {
     position: relative;
 }
+
 main .contactImg img{
     width: 100%;
     height:500px;
@@ -254,19 +268,58 @@ main .contactImg p {
     font-size: 40px;
 }
 
-/* Manque de temps */
-
 main .contact   {
-  
-    
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 50px;
 }
-   
-main .contact section {
+
+main .contact img {
+ width: 20%;
+ height: 10%;
+ border-radius: 5px;
+}
+
+main .contact .form {
+margin: 20px;
+width: 40%;
+}
+
+main .contact .form p {
+    margin-bottom: 5px;
+}
+
+main .contact .form .tea {
+margin: 20px 0px 15px;
+ }
+
+ main .contact .form form input[name="name"],main .contact .form form input[name="email"] {
+    width: 45%;
+ }
+
+ main .contact .form form .NE {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px; 
+    margin-bottom: 10px;
+ }
+
+ main .contact .form form .T {
     display: flex;
     flex-direction: column;
-    border: 2px solid red; 
-    justify-content: space-between;
-    align-items: flex-start;
+    align-items: end;
+ }
+ 
+main .contact .form form input[name="message"] {
+    width: 99%;  
+    margin-bottom: 25px;   
+}
+
+main .contact .form form a {
+background-color: black;
+padding: 10px;
+color: white;
 }
 
 footer {
