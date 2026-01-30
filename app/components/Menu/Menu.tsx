@@ -1,7 +1,5 @@
-import React from "react";
 import { BiCommand, BiLaptop } from "react-icons/bi";
-import { FaInfo } from "react-icons/fa";
-import { ImInfo } from "react-icons/im";
+import { ImGithub, ImInfo } from "react-icons/im";
 import Ligne from "./Ligne";
 import {
   RiCss3Fill,
@@ -22,6 +20,8 @@ import {
   SiSupabase,
   SiSymfony,
 } from "react-icons/si";
+import { LuLink } from "react-icons/lu";
+import { RxExternalLink } from "react-icons/rx";
 
 type MenuProps = {
   id: number;
@@ -38,7 +38,7 @@ const Menu = ({ id, width, height }: MenuProps) => {
             flex flex-col
             ${width} ${height} `}
       >
-                {id === 1 && (
+        {id === 1 && (
           <>
             {/* Menu pomme */}
             <Ligne
@@ -116,7 +116,7 @@ const Menu = ({ id, width, height }: MenuProps) => {
             />
             <Ligne text="Git/GitHub, WordPress" separation={true} />
             <Ligne text="Expérience :" />
-            <Ligne text="Développeur web Full Stack Stage - Cognossimo - 2026" />
+            <Ligne text="Développeur Web Full Stack Stage - Cognossimo - 2026" />
             <Ligne text="Chargé d'assistance - Inter Mutuelle Assistance - 2019 à ce jour" />
             <Ligne text="Employé polyvalent de restauration - Mc Donald's - 2014 à 2016" />
             <Ligne
@@ -129,7 +129,6 @@ const Menu = ({ id, width, height }: MenuProps) => {
             <Ligne text="BEPA CONSEIL VENTE EN ANIMALERIE - MFR" />
           </>
         )}
-
         {id === 2 && (
           <>
             {/* Menu Protfolio */}
@@ -141,16 +140,30 @@ const Menu = ({ id, width, height }: MenuProps) => {
             />
 
             <Ligne
-              text="Un soir je m'ennuyais, je me suis dis 'et si je recréait le design de mon Mac en site web ?', puis j'ai eu envie de rajouter 
-              de plus en plus de choses et finalement je me suis dis que ça serait sympa d'en faire mon portfolio."
+              text="La petite histoire : un soir, alors que je m'ennuyais, je me suis dis 'et si je recréait le design de mon Mac en site web ?', puis j'ai eu envie d'ajouter 
+              de plus en plus d'éléménts et finalement je me suis dis que ça serait sympa d'en faire mon portfolio."
               separation={true}
             />
-            <Ligne text="Naviguez entre les différents menus si vous souhaitez en savoir plus sur moi, mon parcours et mes travaux! 😉" separation={true} />
-            <Ligne text="Cliquez sur la pomme pour voir mon résumé ↖"  />
-            <Ligne text="D'autres améliorations sont à venir 🧑‍💻" separation={true} />
+            <Ligne
+              text="Naviguez entre les différents menus si vous souhaitez en savoir plus sur moi, mon parcours et mes travaux! 😉"
+              separation={true}
+            />
+            <Ligne
+              text="Cliquez sur la pomme pour voir mon résumé ↖"
+              separation={true}
+            />
+            <Ligne text="D'autres améliorations sont à venir 🧑‍💻" />
           </>
-        )}{" "}
-
+        )}
+        {id === 3 && (
+          <>
+          <Ligne text="Visit my github profile" icon={<ImGithub/>} separation={true}/>
+          <Ligne text="Meteo - JS/Tailwind CSS" icon={<RxExternalLink/>} separation={true}/>
+          <Ligne text="Shop - JS/Tailwind CSS" icon={<RxExternalLink/>} separation={true}/>
+          <Ligne text="Signin - Next.js/TypeScript" icon={<RxExternalLink/>} separation={true}/>
+          <Ligne text="Ceppix - PHP POO" icon={<RxExternalLink/>} separation={true}/>
+          </>
+        )}
       </div>
     </>
   );
