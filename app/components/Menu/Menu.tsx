@@ -29,7 +29,7 @@ const Menu = ({ id, width, height }: MenuProps) => {
               icon={<ImInfo />}
               command={<BiCommand />}
               separation={true}
-            />
+            /> 
 
             <Ligne
               text="Bonjour visiteur ! Sur ce site vous saurez-tout de moi, ou presque ! Je vous laisse donc explorer 😉"
