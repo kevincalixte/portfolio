@@ -45,7 +45,7 @@ const Menu = ({ id, width, height }: MenuProps) => {
               text="À propos de moi"
               icon={<ImInfo />}
               command={<BiCommand />}
-              separation={true}@
+              separation={true}
             />
 
             <Ligne text="Kévin Calixte, 31 ans" />
