@@ -28,7 +28,6 @@ const Ligne = ({ text, icon, command, separation}: LigneProps) => {
       </div>
       {separation ? (<span className="w-[95%] h-px bg-white/20 inline-block"></span>): ""}
 
-       <span className="w-[95%] h-px bg-white/20 inline-block"></span>
     </>
   );
 };
