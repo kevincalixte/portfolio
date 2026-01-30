@@ -45,7 +45,7 @@ const Top = () => {
         <li>
           <FaBatteryFull className="text-lg" />
         </li>
-        <li>Thurs 29 jan 8:45 PM</li>
+        <li>Thurs 29 jan 8:45 PM</li> 
       </ul>
     </nav>
   );
