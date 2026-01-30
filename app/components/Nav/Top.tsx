@@ -18,11 +18,12 @@ const Top = () => {
       [&_li]:cursor-pointer"
     >
       <ul>
-        <li className="text-lg">
+        <li className="text-md relative">
           <FaApple />
+          <span className="absolute left-0 top-7"><Menu id={2}/></span>
         </li>
         <li className="font-extrabold relative">Portfolio
-         <span className="absolute left-0 top-7"><Menu /></span> 
+         <span className="absolute left-0 top-7"><Menu id={1} /></span> 
         </li>
         <li>My first website</li>
         <li>My first group project</li>
@@ -44,7 +45,7 @@ const Top = () => {
         <li>
           <FaBatteryFull className="text-lg" />
         </li>
-        <li>Thurs 29 jan 8:45 PM</li>
+        <li>Thurs 29 jan 8:45 PM</li> 
       </ul>
     </nav>
   );
