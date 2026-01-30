@@ -2,7 +2,11 @@
 import React, { useState } from "react";
 
 const Draggable = ({ children }: { children: React.ReactNode }) => {
-  const [pos, setPos] = useState({ x: window.innerWidth / 2, y: window.innerHeight / 2 });
+  const [pos, setPos] = useState({ x: 0, y: 0 });
+
+  React.useEffect(() => {
+    setPos({ x: window.innerWidth / 2, y: window.innerHeight / 2 });
+  }, []);
   const [drag, setDrag] = useState(false);
 
   return (
