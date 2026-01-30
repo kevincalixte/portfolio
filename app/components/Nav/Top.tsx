@@ -20,10 +20,10 @@ const Top = () => {
       <ul>
         <li className="text-md relative">
           <FaApple />
-          <span className="absolute left-0 top-7"><Menu id={2}/></span>
+          <span className="absolute left-0 top-7"><Menu id={1} width="min-w-75"/></span>
         </li>
         <li className="font-extrabold relative">Portfolio
-         <span className="absolute left-0 top-7"><Menu id={1} /></span> 
+         <span className="absolute left-0 top-7"><Menu id={2} width="min-w-75"/></span> 
         </li>
         <li>My first website</li>
         <li>My first group project</li>

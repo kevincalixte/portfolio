@@ -6,28 +6,28 @@ type LigneProps = {
   text: string;
   icon?: React.ReactNode;
   command?: React.ReactNode;
-  separation?: boolean
+  separation?: boolean;
 };
-const Ligne = ({ text, icon, command, separation}: LigneProps) => {
+const Ligne = ({ text, icon, command, separation }: LigneProps) => {
   return (
     <>
       <div
-        className="flex items-center justify-between px-5 py-2 p-1
+        className="flex items-center justify-between mx-2 my-1 p-1 rounded-lg
       hover:bg-[#FD0D24]/60"
       >
         {/* Menu Portfolio */}
-        <span className="">
-         
-          {icon}
+        <span>
+         {icon}
           {text}
+         
         </span>
-        <span className="opacity-40">
-        
-          {command}
-        </span>
+        <span className="opacity-50">{command}</span>
       </div>
-      {separation ? (<span className="w-[95%] h-px bg-white/20 inline-block"></span>): ""}
-
+      {separation ? (
+        <span className="w-[90%] h-px bg-white/20 inline-block m-auto"></span>
+      ) : (
+        ""
+      )}
     </>
   );
 };
