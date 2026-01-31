@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <body
-        className={`${inter.variable} antialiased bg-[url('/assets/imgs/background.jpg')] bg-cover bg-no-repeat bg-center`}
+        className={`${inter.variable} antialiased bg-[url('/assets/imgs/background.jpg')] bg-cover bg-no-repeat bg-center select-none`}
       >
         {children}
       </body>

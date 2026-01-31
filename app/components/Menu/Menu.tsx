@@ -138,20 +138,6 @@ const Menu = ({ id, width, height }: MenuProps) => {
               command={<BiCommand />}
               separation={true}
             />
-
-            <Ligne
-              text="La petite histoire : un soir, alors que je m'ennuyais, je me suis dis 'et si je recréait le design de mon Mac en site web ?', puis j'ai eu envie d'ajouter 
-              de plus en plus d'éléménts et finalement je me suis dis que ça serait sympa d'en faire mon portfolio."
-              separation={true}
-            />
-            <Ligne
-              text="Naviguez entre les différents menus si vous souhaitez en savoir plus sur moi, mon parcours et mes travaux! 😉"
-              separation={true}
-            />
-            <Ligne
-              text="Cliquez sur la pomme pour voir mon résumé ↖"
-              separation={true}
-            />
             <Ligne text="D'autres améliorations sont à venir 🧑‍💻" />
           </>
         )}

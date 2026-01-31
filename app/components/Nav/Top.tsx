@@ -10,7 +10,9 @@ import {
 import Menu from "../Menu/Menu";
 
 const Top = () => {
-  const [click, setClick] = useState(false);
+  const [click1, setClick1] = useState(false);
+  const [click2, setClick2] = useState(false);
+  const [click3, setClick3] = useState(false);
   return (
     <nav
       className="flex items-center justify-between w-full h-10 
@@ -18,25 +20,25 @@ const Top = () => {
       [&_li]:cursor-pointer"
     >
       <ul>
-        <li className="text-md relative">
+        <li onClick={()=> setClick1((prev)=>!prev)} className="text-md relative">
           <FaApple />
           <span className="absolute left-0 top-7">
-            <Menu id={1} width="min-w-75" />
+           {click1 ? <Menu id={1} width="min-w-75" />: null} 
           </span>
         </li>
-        <li className="font-extrabold relative">
+        <li onClick={()=> setClick2((prev)=>!prev)} className="font-extrabold relative">
           Portfolio
           <span className="absolute left-0 top-7">
-            <Menu id={2} width="min-w-75" />
+           {click2 ? <Menu id={2} width="min-w-75" />: null} 
           </span>
         </li>
         <li>My first website</li>
         <li>My first group project</li>
         <li>My first work project</li>
-        <li className="relative">
+        <li onClick={()=> setClick3((prev)=>!prev)} className="relative">
           My other projects
           <span className="absolute left-0 top-7">
-            <Menu id={3} width="min-w-75" />
+           {click3 ? <Menu id={3} width="min-w-75" />: null} 
           </span>
         </li>
         <li>Contact Me</li>
