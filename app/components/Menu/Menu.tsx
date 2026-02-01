@@ -149,6 +149,10 @@ const Menu = ({ id, width, height }: MenuProps) => {
               command={<BiCommand />}
               separation={true}
             />
+            <Ligne text="Ce site est le fruit de 9 mois d'apprentissage au Ceppic et également d'un énorme investissement personnel." />
+            <Ligne text="Je vous présente mon parcours, mes projets sous la forme d'une experience visuelle façon MacOS." />
+            <Ligne text="Vous pouvez me laisser un avis ou me contacter." />
+            <Ligne text="Bonne visite à vous ! 😊" separation={true} />
             <Ligne text="D'autres améliorations sont à venir 🧑‍💻" />
           </>
         )}
