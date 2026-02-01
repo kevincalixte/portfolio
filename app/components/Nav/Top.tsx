@@ -8,11 +8,13 @@ import {
   FaWifi,
 } from "react-icons/fa";
 import Menu from "../Menu/Menu";
+import Messages from "../Messages/Messages";
 
 const Top = () => {
   const [click1, setClick1] = useState(false);
   const [click2, setClick2] = useState(false);
   const [click3, setClick3] = useState(false);
+  const [click4, setClick4] = useState(false);
   return (
     <nav
       className="flex items-center justify-between w-full h-10 
@@ -20,28 +22,45 @@ const Top = () => {
       [&_li]:cursor-pointer"
     >
       <ul>
-        <li onClick={()=> setClick1((prev)=>!prev)} className="text-md relative">
+        <li
+          tabIndex={1}
+          onClick={() => setClick1((prev) => !prev)}
+          onBlur={() => setClick1((prev) => !prev)}
+          className="text-md relative"
+        >
           <FaApple />
           <span className="absolute left-0 top-7">
-           {click1 ? <Menu id={1} width="min-w-75" />: null} 
+            {click1 ? <Menu id={1} width="min-w-75" /> : null}
           </span>
         </li>
-        <li onClick={()=> setClick2((prev)=>!prev)} className="font-extrabold relative">
+        <li
+          tabIndex={2}
+          onClick={() => setClick2((prev) => !prev)}
+          onBlur={() => setClick2((prev) => !prev)}
+          className="font-extrabold relative"
+        >
           Portfolio
           <span className="absolute left-0 top-7">
-           {click2 ? <Menu id={2} width="min-w-75" />: null} 
+            {click2 ? <Menu id={2} width="min-w-75" /> : null}
           </span>
         </li>
         <li>My first website</li>
         <li>My first group project</li>
         <li>My first work project</li>
-        <li onClick={()=> setClick3((prev)=>!prev)} className="relative">
+        <li
+          tabIndex={3}
+          onClick={() => setClick3((prev) => !prev)}
+          onBlur={() => setClick3((prev) => !prev)}
+          className="relative"
+        >
           My other projects
           <span className="absolute left-0 top-7">
-           {click3 ? <Menu id={3} width="min-w-75" />: null} 
+            {click3 ? <Menu id={3} width="min-w-75" /> : null}
           </span>
         </li>
-        <li>Contact Me</li>
+        <li>Leave a review</li>
+        <li onClick={() => setClick4((prev) => !prev)}>Contact Me</li>
+        {click4 ? <Messages /> : null}
       </ul>
 
       <ul>

@@ -15,10 +15,12 @@ import {
 } from "react-icons/ri";
 import {
   SiDocker,
+  SiGithub,
   SiMysql,
   SiPostgresql,
   SiSupabase,
   SiSymfony,
+  SiWordpress,
 } from "react-icons/si";
 import { LuLink } from "react-icons/lu";
 import { RxExternalLink } from "react-icons/rx";
@@ -114,7 +116,16 @@ const Menu = ({ id, width, height }: MenuProps) => {
                 </>
               }
             />
-            <Ligne text="Git/GitHub, WordPress" separation={true} />
+            <Ligne
+              text="Git/GitHub, WordPress"
+              command={
+                <>
+                  <SiGithub />
+                  <SiWordpress />
+                </>
+              }
+              separation={true}
+            />
             <Ligne text="Expérience :" />
             <Ligne text="Développeur Web Full Stack Stage - Cognossimo - 2026" />
             <Ligne text="Chargé d'assistance - Inter Mutuelle Assistance - 2019 à ce jour" />
@@ -143,11 +154,31 @@ const Menu = ({ id, width, height }: MenuProps) => {
         )}
         {id === 3 && (
           <>
-          <Ligne text="Visit my github profile" icon={<ImGithub/>} separation={true}/>
-          <Ligne text="Meteo - JS/Tailwind CSS" icon={<RxExternalLink/>} separation={true}/>
-          <Ligne text="Shop - JS/Tailwind CSS" icon={<RxExternalLink/>} separation={true}/>
-          <Ligne text="Signin - Next.js/TypeScript" icon={<RxExternalLink/>} separation={true}/>
-          <Ligne text="Ceppix - PHP POO" icon={<RxExternalLink/>} separation={true}/>
+            <Ligne
+              text="Visit my github profile"
+              icon={<ImGithub />}
+              separation={true}
+            />
+            <Ligne
+              text="Meteo - JS/Tailwind CSS"
+              icon={<RxExternalLink />}
+              separation={true}
+            />
+            <Ligne
+              text="Shop - JS/Tailwind CSS"
+              icon={<RxExternalLink />}
+              separation={true}
+            />
+            <Ligne
+              text="Signin - Next.js/TypeScript"
+              icon={<RxExternalLink />}
+              separation={true}
+            />
+            <Ligne
+              text="Ceppix - PHP POO"
+              icon={<RxExternalLink />}
+              separation={true}
+            />
           </>
         )}
       </div>

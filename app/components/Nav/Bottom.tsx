@@ -2,13 +2,16 @@
 import React, { useState } from "react";
 import Icon from "./Icon";
 import Messages from "../Messages/Messages";
+import Notes from "../Notes/Notes";
 
 
 const Bottom = () => {
   const [openMessages, setOpenMessages] = useState(false);
+  const [openNotes, setOpenNotes] = useState(false);
   return (
     <>
       {openMessages ? <Messages/> : null}
+      {openNotes ? <Notes/> : null}
       <div className="flex justify-center items-end h-screen mb-3">
         <nav className="w-1/4 h-19 rounded-3xl text-white backdrop-blur-md border border-white/20 shadow-lg hover:scale-107">
           <ul
@@ -31,8 +34,10 @@ const Bottom = () => {
               <Icon img="/assets/imgs/macOS/icons/terminal.png" />
             </li>
             <li onClick={() => setOpenMessages((prev) => !prev)}>
-    
               <Icon img="/assets/imgs/macOS/icons/messages.png" />
+            </li>
+            <li onClick={() => setOpenNotes((prev) => !prev)}>
+              <Icon img="/assets/imgs/macOS/icons/notes.png" />
             </li>
             <li>
               <div className="w-px h-13 bg-white/33"></div>
