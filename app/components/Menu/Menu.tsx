@@ -141,9 +141,9 @@ const Menu = ({ id, width, height }: MenuProps) => {
               separation={true}
             />
             <Ligne text="Formation :" />
-            <Ligne text="TITRE PROFESSIONNEL DEVELOPPEUR WEB ET WEB MOBILES - CEPPIC" />
-            <Ligne text="TITRE PROFESSIONNEL CONSEILLER RELATION CLIENT À DISTANCE - AFPA" />
-            <Ligne text="BEPA CONSEIL VENTE EN ANIMALERIE - MFR" />
+            <Ligne text="Titre Professionnel Developpeur Web et Web Mobiles - Ceppic" />
+            <Ligne text="Titre Porfessionnel Conseiller Relation Client à Distance - Afpa" />
+            <Ligne text="Bepa Conseil Vente en animalerie - Mfr" />
           </>
         )}
         {id === 2 && (

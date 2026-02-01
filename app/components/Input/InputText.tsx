@@ -1,11 +1,19 @@
-import React from 'react'
+import React from "react";
 
-const InputText = () => {
+type InputTextProps = {
+  placeholder?: string;
+  width?: string;
+  heigth?: string;
+  border?: string;
+};
+const InputText = ({ placeholder, width, heigth, border }: InputTextProps) => {
   return (
-    <input type='text' className='bg-[#1B1B1B] rounded-4xl border border-white/20 shadow-md w-full p-2.5'>
-      
-    </input>
-  )
-}
+    <input
+      type="text"
+      className={`bg-[#1B1B1B] rounded-4xl ${border} border-white/20 shadow-md ${width} ${heigth}  p-2.5`}
+      placeholder={placeholder}
+    ></input>
+  );
+};
 
-export default InputText
+export default InputText;
