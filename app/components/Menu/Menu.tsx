@@ -25,6 +25,7 @@ import {
 } from "react-icons/si";
 import { LuLink } from "react-icons/lu";
 import { RxExternalLink } from "react-icons/rx";
+import TextArea from "../Input/TextArea";
 
 type MenuProps = {
   id: number;
@@ -184,6 +185,12 @@ const Menu = ({ id, width, height }: MenuProps) => {
               icon={<RxExternalLink />}
             />
             <Ligne text="Ceppix - PHP POO" icon={<RxExternalLink />} />
+          </>
+        )}
+
+        {id === 4 && (
+          <>
+            <TextArea />
           </>
         )}
       </div>
