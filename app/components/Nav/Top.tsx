@@ -44,16 +44,14 @@ const Top = () => {
             {click2 ? <Menu id={2} width="min-w-75" /> : null}
           </span>
         </li>
-        <li>My first website</li>
-        <li>My first group project</li>
-        <li>My first work project</li>
+      
         <li
           tabIndex={3}
           onClick={() => setClick3((prev) => !prev)}
           onBlur={() => setClick3((prev) => !prev)}
           className="relative"
         >
-          My other projects
+          My projects
           <span className="absolute left-0 top-7">
             {click3 ? <Menu id={3} width="min-w-75" /> : null}
           </span>

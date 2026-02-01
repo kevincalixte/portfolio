@@ -3,6 +3,7 @@ import { ImGithub, ImInfo } from "react-icons/im";
 import Ligne from "./Ligne";
 import {
   RiCss3Fill,
+  RiDownload2Fill,
   RiHtml5Fill,
   RiJavascriptFill,
   RiNextjsFill,
@@ -44,7 +45,7 @@ const Menu = ({ id, width, height }: MenuProps) => {
           <>
             {/* Menu pomme */}
             <Ligne
-              text="À propos de moi"
+              text="About me"
               icon={<BiLaptop />}
               command={<BiCommand />}
               separation={true}
@@ -65,6 +66,11 @@ const Menu = ({ id, width, height }: MenuProps) => {
                   <RiRobot2Fill />
                 </>
               }
+              separation={true}
+            />
+            <Ligne
+              text="Download my resume"
+              icon={<RiDownload2Fill />}
               separation={true}
             />
             <Ligne text="Compétences :" />
@@ -144,7 +150,7 @@ const Menu = ({ id, width, height }: MenuProps) => {
           <>
             {/* Menu Protfolio */}
             <Ligne
-              text="À propos de Portfolio"
+              text="About Portfolio"
               icon={<ImInfo />}
               command={<BiCommand />}
               separation={true}
@@ -163,26 +169,21 @@ const Menu = ({ id, width, height }: MenuProps) => {
               icon={<ImGithub />}
               separation={true}
             />
+            <Ligne text="My first website" icon={<RxExternalLink />} />
+            <Ligne text="My first group project" icon={<RxExternalLink />} />
             <Ligne
-              text="Meteo - JS/Tailwind CSS"
+              text="My first work project"
               icon={<RxExternalLink />}
               separation={true}
             />
-            <Ligne
-              text="Shop - JS/Tailwind CSS"
-              icon={<RxExternalLink />}
-              separation={true}
-            />
+
+            <Ligne text="Meteo - JS/Tailwind CSS" icon={<RxExternalLink />} />
+            <Ligne text="Shop - JS/Tailwind CSS" icon={<RxExternalLink />} />
             <Ligne
               text="Signin - Next.js/TypeScript"
               icon={<RxExternalLink />}
-              separation={true}
             />
-            <Ligne
-              text="Ceppix - PHP POO"
-              icon={<RxExternalLink />}
-              separation={true}
-            />
+            <Ligne text="Ceppix - PHP POO" icon={<RxExternalLink />} />
           </>
         )}
       </div>
