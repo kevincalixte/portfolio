@@ -22,22 +22,23 @@ const Top = () => {
       [&_ul]:flex [&_ul]:items-center [&_ul]:gap-5
       [&_li]:cursor-pointer text-white "
     >
-      <ul>
+      <ul >
         <li
+        
           tabIndex={1}
           onClick={() => setClick1((prev) => !prev)}
-          onBlur={() => setClick1((prev) => !prev)}
+          onBlur={() => setClick1(false)}
           className="text-md relative"
         >
           <FaApple />
-          <span className="absolute left-0 top-7">
+          <span className="absolute left-0 top-7" >
             {click1 ? <Menu id={1} width="min-w-75" /> : null}
           </span>
         </li>
         <li
           tabIndex={2}
           onClick={() => setClick2((prev) => !prev)}
-          onBlur={() => setClick2((prev) => !prev)}
+          onBlur={() => setClick2(false)}
           className="font-extrabold relative"
         >
           Portfolio
@@ -46,9 +47,9 @@ const Top = () => {
           </span>
         </li>
         <li
-          tabIndex={4}
+          tabIndex={3}
           onClick={() => setClick3((prev) => !prev)}
-          onBlur={() => setClick3((prev) => !prev)}
+          onBlur={() => setClick3(false)}
           className="relative"
         >
           My projects
@@ -56,11 +57,15 @@ const Top = () => {
             {click3 ? <Menu id={3} width="min-w-75" /> : null}
           </span>
         </li>
-        <li tabIndex={4} onClick={() => setClick5((prev) => !prev) } className="relative">
+        <li
+          tabIndex={4}
+          onClick={() => setClick5(true)}
+          // onBlur={() => setClick5(false)}
+          className="relative"
+        >
           Leave a review
           <span className="absolute left-0 top-7">
-
-          {click5 ? <Menu id={4} width="min-w-75" /> : null}
+            {click5 ? <Menu id={4} width="min-w-75" closereview={setClick5}/> : null}
           </span>
         </li>
         <li onClick={() => setClick4((prev) => !prev)}>Contact Me</li>

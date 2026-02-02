@@ -26,16 +26,19 @@ import {
 import { LuLink } from "react-icons/lu";
 import { RxExternalLink } from "react-icons/rx";
 import TextArea from "../Input/TextArea";
+import InputButton from "../Input/InputButton";
+import { DispatcherEvent } from "next/dist/next-devtools/dev-overlay/shared";
 
 type MenuProps = {
   id: number;
   width?: string;
   height?: string;
+  closereview?: React.Dispatch<React.SetStateAction<boolean>>;
 };
-const Menu = ({ id, width, height }: MenuProps) => {
+const Menu = ({ id, width, height,closereview }: MenuProps) => {
   return (
     <>
-      <div
+      <div 
         className={`[&_span]:font-medium [&_span]:flex [&_span]:items-center [&_span]:gap-3 bg-black/30 
             rounded-2xl transition-all duration-200 ease-in-out
             backdrop-blur-md border border-white/20 shadow-2xl
@@ -189,9 +192,10 @@ const Menu = ({ id, width, height }: MenuProps) => {
         )}
 
         {id === 4 && (
-          <>
+          <div className="p-3 space-y-3">
             <TextArea />
-          </>
+            <InputButton text="Submit"  classname= " hover:bg-white/10 " />
+          </div>
         )}
       </div>
     </>
